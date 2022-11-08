@@ -14,18 +14,24 @@ steps:
   displayName: 'restore .net'
   inputs:
     command: 'restore'
-    projects: '**/*.sln'
+    projects: 'C:\Users\Geetanjali.Yadav\e.shop\eShopOnWeb'
     feedsToUse: 'select'
     configuration: 'release'
 - task: DotNetCoreCLI@2
   displayName: 'build .net'
   inputs:
     command: 'build'
-    projects: '**/*.sln'
+    projects: 'C:\Users\Geetanjali.Yadav\e.shop\eShopOnWeb'
     configuration: 'release'
 - task: DotNetCoreCLI@2
   displayName: 'test .net'
   inputs:
     command: 'test'
-    projects: '**/*.sln'
+    projects: 'C:\Users\Geetanjali.Yadav\e.shop\eShopOnWeb'
     configuration: 'release'
+- task: DotNetCoreCLI@2
+  inputs:
+    command: 'publish'
+    publishWebProjects: true
+    zipAfterPublish: false
+    workingDirectory: 'C:\Users\Geetanjali.Yadav\e.shop\eShopOnWeb'
