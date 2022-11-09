@@ -7,7 +7,7 @@ trigger:
 - main
 
 pool:
-  vmImage: window-latest
+  vmImage: ubantu-latest
 
 steps:
 - task: UseDotNet@2
