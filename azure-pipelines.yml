@@ -33,4 +33,4 @@ steps:
     command: 'publish'
     publishWebProjects: true
     zipAfterPublish: false
-    workingDirectory: '/Geetanjali.Yadav/e.shop/eShopOnWeb'
+    workingDirectory: 'eShopOnWeb.sln'
