@@ -28,9 +28,9 @@ steps:
     projects: 'eShopOnWeb.sln'
     configuration: 'release'
 
-#- task: DotNetCoreCLI@2
-#  inputs:
-#    command: 'publish'
-#    publishWebProjects: true
-#    zipAfterPublish: false
-#    workingDirectory: '/Geetanjali.Yadav/e.shop/eShopOnWeb'
+- task: DotNetCoreCLI@2
+  inputs:
+    command: 'publish'
+    publishWebProjects: true
+    zipAfterPublish: false
+    workingDirectory: '/Geetanjali.Yadav/e.shop/eShopOnWeb'
