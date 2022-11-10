@@ -40,6 +40,5 @@ steps:
 - task: DownloadBuildArtifacts@1
   inputs:
     buildType: 'current'
-    downloadType: 'single'
-    artifactName: 'wwwroot'
-    downloadPath: '$(System.SourcesDirectory)/bin/Debug/net6.0'
+    downloadType: 'specific'
+    downloadPath: '$(System.SourcesDirectory)\src\ApplicationCore\bin\Debug\net6.0'
