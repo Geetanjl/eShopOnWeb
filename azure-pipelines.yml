@@ -42,4 +42,4 @@ steps:
     buildType: 'current'
     downloadType: 'single'
     artifactName: 'wwwroot'
-    downloadPath: '$(System.SourcesDirectory)/bin/Release/net6.0'
+    downloadPath: '$(System.SourcesDirectory)/bin/Debug/net6.0'
