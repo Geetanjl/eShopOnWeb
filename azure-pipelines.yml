@@ -36,6 +36,4 @@ steps:
 - task: DotNetCoreCLI@2
   inputs:
     command: 'publish'
-    publishWebProjects: false
-    zipAfterPublish: false
-    workingDirectory: 'src\ApplicationCore\bin\Debug\net6.0'
+    publishWebProjects: true
