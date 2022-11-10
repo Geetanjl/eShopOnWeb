@@ -19,6 +19,7 @@ steps:
     command: 'restore'
     projects: 'eShopOnWeb.sln'
     feedsToUse: 'select'
+    configuration: 'release'
 - task: DotNetCoreCLI@2
   displayName: 'build .net'
   inputs:
@@ -36,4 +37,4 @@ steps:
   inputs:
     command: 'publish'
     publishWebProjects: false
-    projects: '**/*.csproj'
+    zipAfterPublish: false
