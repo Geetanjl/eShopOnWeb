@@ -19,10 +19,11 @@ steps:
   displayName: 'restore .net'
   inputs:
     command: 'restore'
-    projects: '/Geetanjali.Yadav/e.shop'
+    projects: '/Geetanjali.Yadav/e.shop/'
     feedsToUse: 'select'
     configuration: 'release'
 - task: DotNetCoreCLI@2
+
   displayName: 'build .net'
   inputs:
     command: 'build'
