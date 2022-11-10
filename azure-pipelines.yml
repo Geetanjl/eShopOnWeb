@@ -34,12 +34,14 @@ steps:
     configuration: 'release'
 
 - task: DotNetCoreCLI@2
+  displayName: 'publish .net'
   inputs:
     command: 'publish'
     publishWebProjects: true
     configuration: 'Release'
-- task: DownloadBuildArtifacts@1
+- task: PublishBuildArtifacts@1
+  displayName: 'publish artifact'
   inputs:
-    buildType: 'current'
-    downloadType: 'specific'
-    downloadPath: '$(System.SourcesDirectory)\src\ApplicationCore\bin\Debug\net6.0'
+    PathtoPublish: '$(Build.SourcesDirectory)\src\ApplicationCore\bin\Release\net6.0'
+    ArtifactName: 'drop'
+    publishLocation: 'Container'
