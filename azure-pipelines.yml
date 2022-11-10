@@ -45,3 +45,33 @@ steps:
     PathtoPublish: '$(Build.SourcesDirectory)\src\ApplicationCore\bin\Debug\net6.0'
     ArtifactName: 'drop'
     publishLocation: 'Container'
+- task: PublishBuildArtifacts@1
+  displayName: 'publish artifact'
+  inputs:
+    PathtoPublish: '$(Build.SourcesDirectory)\src\BlazorShared\bin\Debug\net6.0'
+    ArtifactName: 'drop'
+    publishLocation: 'Container'
+- task: PublishBuildArtifacts@1
+  displayName: 'publish artifact'
+  inputs:
+    PathtoPublish: '$(Build.SourcesDirectory)\src\Infrastructure\bin\Debug\net6.0'
+    ArtifactName: 'drop'
+    publishLocation: 'Container'
+- task: PublishBuildArtifacts@1
+  displayName: 'publish artifact'
+  inputs:
+    PathtoPublish: '$(Build.SourcesDirectory)\src\BlazorAdmin\bin\Debug\net6.0'
+    ArtifactName: 'drop'
+    publishLocation: 'Container'
+- task: PublishBuildArtifacts@1
+  displayName: 'publish artifact'
+  inputs:
+    PathtoPublish: '$(Build.SourcesDirectory)\src\BlazorAdmin\bin\Debug\net6.0\wwwroot'
+    ArtifactName: 'drop'
+    publishLocation: 'Container'
+- task: PublishBuildArtifacts@1
+  displayName: 'publish artifact'
+  inputs:
+    PathtoPublish: '$(Build.SourcesDirectory)\src\Web\bin\Debug\net6.0'
+    ArtifactName: 'drop'
+    publishLocation: 'Container'
