@@ -37,6 +37,7 @@ steps:
   inputs:
     command: 'publish'
     publishWebProjects: true
+    configuration: 'Release'
 - task: DownloadBuildArtifacts@1
   inputs:
     buildType: 'current'
