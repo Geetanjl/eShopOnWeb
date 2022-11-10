@@ -36,7 +36,7 @@ steps:
   displayName: 'npm install'
   inputs:
     command: 'install'
-    workingDir: 'Web'
+    workingDir: 'eShopOnWeb.sln'
 - task: DotNetCoreCLI@2
   inputs:
     command: 'publish'
