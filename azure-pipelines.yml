@@ -36,7 +36,7 @@ steps:
   displayName: 'npm install'
   inputs:
     command: 'install'
-    workingDir: '/src/Web'
+    workingDir: 'Web'
 - task: DotNetCoreCLI@2
   inputs:
     command: 'publish'
