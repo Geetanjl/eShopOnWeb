@@ -33,4 +33,3 @@ steps:
     command: 'publish'
     publishWebProjects: false
     projects: '**/*.csproj'
-    workingDirectory: 'web'
