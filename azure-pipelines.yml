@@ -37,3 +37,9 @@ steps:
   inputs:
     command: 'publish'
     publishWebProjects: true
+- task: DownloadBuildArtifacts@1
+  inputs:
+    buildType: 'current'
+    downloadType: 'single'
+    artifactName: 'wwwroot'
+    downloadPath: '$(System.SourcesDirectory)/bin/Release/net6.0'
