@@ -10,6 +10,10 @@ pool:
   vmImage: windows-latest
 
 steps:
+- task: UseDotNet@2
+  inputs:
+    packageType: 'sdk'
+    version: 
 - task: DotNetCoreCLI@2
   inputs:
     command: 'restore'
