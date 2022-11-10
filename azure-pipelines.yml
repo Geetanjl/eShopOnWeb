@@ -19,7 +19,7 @@ steps:
   displayName: 'restore .net'
   inputs:
     command: 'restore'
-    projects: '/Geetanjali.Yadav/e.shop/'
+    projects: 'C:\Users\Geetanjali.Yadav\e.shop\eShopOnWeb'
     feedsToUse: 'select'
     configuration: 'release'
 - task: DotNetCoreCLI@2
@@ -27,17 +27,17 @@ steps:
   displayName: 'build .net'
   inputs:
     command: 'build'
-    projects: '/Geetanjali.Yadav/e.shop'
+    projects: 'C:\Users\Geetanjali.Yadav\e.shop\eShopOnWeb'
     configuration: 'release'
 - task: DotNetCoreCLI@2
   displayName: 'test .net'
   inputs:
     command: 'test'
-    projects: /Geetanjali.Yadav/e.shop'
+    projects: C:\Users\Geetanjali.Yadav\e.shop\eShopOnWeb'
     configuration: 'release'
 - task: DotNetCoreCLI@2
   inputs:
     command: 'publish'
     publishWebProjects: true
     zipAfterPublish: false
-    workingDirectory: '/Geetanjali.Yadav/e.shop'
+    workingDirectory: 'C:\Users\Geetanjali.Yadav\e.shop\eShopOnWeb'
