@@ -42,6 +42,6 @@ steps:
 - task: PublishBuildArtifacts@1
   displayName: 'publish artifact'
   inputs:
-    PathtoPublish: '$(Build.SourcesDirectory)\src\ApplicationCore\bin\Release\net6.0'
+    PathtoPublish: '$(Build.SourcesDirectory)\src\ApplicationCore\bin\Debug\net6.0'
     ArtifactName: 'drop'
     publishLocation: 'Container'
