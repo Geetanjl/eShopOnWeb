@@ -32,7 +32,11 @@ steps:
     command: 'test'
     projects: 'eShopOnWeb.sln'
     configuration: 'release'
-
+- task: Npm@1
+  displayName: 'npm install'
+  inputs:
+    command: 'install'
+    workingDir: '/src/Web'
 - task: DotNetCoreCLI@2
   inputs:
     command: 'publish'
